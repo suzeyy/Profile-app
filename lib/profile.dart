@@ -14,14 +14,20 @@ class Profile extends StatelessWidget {
               height: 10,
             ),
             Center(
-              child: Image(image: Image.asset('assets/images/picture.jpeg').image, height: 250, width: 250),
+              child: Image(
+                  image: Image.asset('assets/images/picture.jpeg').image,
+                  height: 250,
+                  width: 250),
             ),
             SizedBox(
               height: 10,
             ),
             Text(
               'Name: Sujana Pyakurel',
-              style: TextStyle(color: Colors.green, fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  color: Colors.green,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold),
             ),
             SizedBox(
               height: 5,
@@ -30,16 +36,16 @@ class Profile extends StatelessWidget {
             SizedBox(
               height: 5,
             ),
-            Text('Email: sujanapyakurel2000@gmail.com', style: TextStyle(fontSize: 19)),
+            Text('Email: sujanapyakurel2000@gmail.com',
+                style: TextStyle(fontSize: 19)),
             SizedBox(
               height: 50,
             ),
             ElevatedButton(
-              onPressed: () {},
-              child: GestureDetector(
-                onTap: () => Navigator.pushNamed(context, RouteConstants.moreRoute),
-                child: Text('More'),
-              ),
+              onPressed: () {
+                Navigator.pushNamed(context, RouteConstants.moreRoute);
+              },
+              child: Text('More'),
             ),
             SizedBox(
               height: 100,
